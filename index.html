@@ -295,7 +295,7 @@
 
     .psf-context {
       display: grid;
-      grid-template-columns: minmax(0, 1.05fr) minmax(16rem, 0.95fr);
+      grid-template-columns: minmax(0, 1fr) minmax(16rem, 1fr);
       gap: 1rem;
       align-items: start;
     }
@@ -310,7 +310,9 @@
     .psf-image-frame img {
       display: block;
       width: 100%;
-      height: auto;
+      max-height: 420px;
+      object-fit: contain;
+      background: #000;
     }
 
     .psf-detail-panel {
